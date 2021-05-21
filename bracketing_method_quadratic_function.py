@@ -29,9 +29,8 @@ def bracketing_method_quadratic_function(a, b, tolerance, n, m, l):
     return a, b, c, absolute_error  # note that a,b is the most precise interval where it contains the acceptable root c
 
 
-x1, x2, x3, x4 = bracketing_method_quadratic_function(0, 1, 0.001, 2.8, -4.73, 1)  # x3 is the result close enough to
+x1, x2, x3, x4 = bracketing_method_quadratic_function(-2, 2, 0.005, 2, 0, -3)  # x3 is the result close enough to
 # the root
 # with +/- absolute error
 
 print(x3, "+/-", x4)
-exit()
