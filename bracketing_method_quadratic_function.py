@@ -1,6 +1,5 @@
 import math
 
-
 def bracketing_method_quadratic_function(a, b, tolerance, fstr):
     c = (a + b) / 2  # mid point for every interval we cut down, c will get smaller and smaller as the interval got
     # cut down and up some point, c will be close enough to the roots with acceptable error which is less than the
@@ -30,7 +29,7 @@ def bracketing_method_quadratic_function(a, b, tolerance, fstr):
     return a, b, c, absolute_error  # note that a,b is the most precise interval where it contains the acceptable root c
 
 
-fstr = " x - 6*x - 5 "
+fstr = " -x - 6*x - 5 "
 x1, x2, x3, x4 = bracketing_method_quadratic_function(-2, 0, 10 ** (-8), fstr)  # x3 is the result close enough to
 # the root
 # with +/- absolute error
