@@ -1,18 +1,25 @@
 import math
 
-def sin(x):
+
+                ##  PLS, IF USE ^ FOR EXPONENTIAL, USE ** INSTEAD ##
+
+def sin(x):  # function to define str 'sin' as mathematical sin() operation
     return math.sin(x)
 
-def cos(x):
+
+def cos(x):  # function to define str 'cos' as mathematical cos() operation
     return math.cos(x)
 
-def ln (x):
+
+def ln(x):  # function to define str 'cos' as mathematical cos() operation
     return math.log(x)
 
-def log (x):
+
+def log(x):  # function to define str 'cos' as mathematical cos() operation
     return math.log10(x)
 
-def e(x):
+
+def e(x):  # function to define str 'cos' as mathematical cos() operation
     return math.exp(x)
 
 def false_position_method (a, b, relative_tolerance, f_string):
@@ -44,7 +51,7 @@ def false_position_method (a, b, relative_tolerance, f_string):
 
         return a, b, c, relative_error
 
-f_string = "sin(2*x) - log(x)" # f(x) has to have the format like this, remember trigonometry hasn't worked yet, also log, e,...
+f_string = "sin(2*x) - log(x)" # f(x) has to have the format like this.
 x1, x2, x3, x4 = false_position_method(0.5, 1.8, 0.0000000001, f_string)
 
 print(x3, "+/-", x4) # return result +- relative error

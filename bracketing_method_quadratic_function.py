@@ -1,23 +1,25 @@
 import math
 
 
-def sin(x):
+                ##  PLS, IF USE ^ FOR EXPONENTIAL, USE ** INSTEAD ##
+
+def sin(x):  # function to define str 'sin' as mathematical sin() operation
     return math.sin(x)
 
 
-def cos(x):
+def cos(x):  # function to define str 'cos' as mathematical cos() operation
     return math.cos(x)
 
 
-def ln(x):
+def ln(x):  # function to define str 'cos' as mathematical cos() operation
     return math.log(x)
 
 
-def log(x):
+def log(x):  # function to define str 'cos' as mathematical cos() operation
     return math.log10(x)
 
 
-def e(x):
+def e(x):  # function to define str 'cos' as mathematical cos() operation
     return math.exp(x)
 
 
