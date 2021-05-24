@@ -1,5 +1,20 @@
 import math
 
+def sin(x):
+    return math.sin(x)
+
+def cos(x):
+    return math.cos(x)
+
+def ln (x):
+    return math.log(x)
+
+def log (x):
+    return math.log10(x)
+
+def e(x):
+    return math.exp(x)
+
 def false_position_method (a, b, relative_tolerance, f_string):
 
     f_a = eval(f_string.replace('x', 'a')) # calculate f(a)
@@ -29,8 +44,8 @@ def false_position_method (a, b, relative_tolerance, f_string):
 
         return a, b, c, relative_error
 
-f_string = "x**2 + 6*x - 3" # f(x) has to have the format like this, remember trigonometry hasn't worked yet, also log, e,...
-x1, x2, x3, x4 = false_position_method(0, 1, 0.000001, f_string)
+f_string = "sin(2*x) - log(x)" # f(x) has to have the format like this, remember trigonometry hasn't worked yet, also log, e,...
+x1, x2, x3, x4 = false_position_method(0.5, 1.8, 0.0000000001, f_string)
 
 print(x3, "+/-", x4) # return result +- relative error
 exit()

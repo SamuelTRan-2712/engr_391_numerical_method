@@ -1,13 +1,34 @@
 import math
 
-def bracketing_method_quadratic_function(a, b, tolerance, fstr):
+
+def sin(x):
+    return math.sin(x)
+
+
+def cos(x):
+    return math.cos(x)
+
+
+def ln(x):
+    return math.log(x)
+
+
+def log(x):
+    return math.log10(x)
+
+
+def e(x):
+    return math.exp(x)
+
+
+def bracketing_method_quadratic_function(a, b, tolerance, f_str):
     c = (a + b) / 2  # mid point for every interval we cut down, c will get smaller and smaller as the interval got
     # cut down and up some point, c will be close enough to the roots with acceptable error which is less than the
     # tolerance
 
-    f_a = eval(fstr.replace('x', 'a'))
-    f_b = eval(fstr.replace('x', 'b'))
-    f_c = eval(fstr.replace('x', 'c'))
+    f_a = eval(f_str.replace('x', 'a'))
+    f_b = eval(f_str.replace('x', 'b'))
+    f_c = eval(f_str.replace('x', 'c'))
 
     absolute_error = abs((b - a) / 2)  # calculate the absolute error after every trial
 
@@ -22,15 +43,15 @@ def bracketing_method_quadratic_function(a, b, tolerance, fstr):
         c = (a + b) / 2  # that being said, c gets smaller and closer to the real root
         absolute_error = abs((b - a) / 2)  # absolute value also changes based on new a or new b
 
-        f_a = eval(fstr.replace('x', 'a'))  # calculate f(a)
-        f_b = eval(fstr.replace('x', 'b'))  # calculate f(b)
-        f_c = eval(fstr.replace('x', 'c'))  # calculate f(c)
+        f_a = eval(f_str.replace('x', 'a'))  # calculate f(a)
+        f_b = eval(f_str.replace('x', 'b'))  # calculate f(b)
+        f_c = eval(f_str.replace('x', 'c'))  # calculate f(c)
 
     return a, b, c, absolute_error  # note that a,b is the most precise interval where it contains the acceptable root c
 
 
-fstr = " -x - 6*x - 5 "
-x1, x2, x3, x4 = bracketing_method_quadratic_function(-2, 0, 10 ** (-8), fstr)  # x3 is the result close enough to
+f_str = " sin(2*x) - log(x)"
+x1, x2, x3, x4 = bracketing_method_quadratic_function(0.5, 2, 0.000001, f_str)  # x3 is the result close enough to
 # the root
 # with +/- absolute error
 
