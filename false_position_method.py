@@ -11,15 +11,15 @@ def cos(x):  # function to define str 'cos' as mathematical cos() operation
     return math.cos(x)
 
 
-def ln(x):  # function to define str 'cos' as mathematical cos() operation
+def ln(x):  # function to define str 'ln' as mathematical ln() operation
     return math.log(x)
 
 
-def log(x):  # function to define str 'cos' as mathematical cos() operation
+def log(x):  # function to define str 'log' as mathematical log() operation
     return math.log10(x)
 
 
-def e(x):  # function to define str 'cos' as mathematical cos() operation
+def e(x):  # function to define str 'e' as mathematical e() operation
     return math.exp(x)
 
 def false_position_method (a, b, relative_tolerance, f_string):
